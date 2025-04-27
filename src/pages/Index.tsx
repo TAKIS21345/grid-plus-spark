@@ -1,13 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import HeroSection from '@/components/sections/HeroSection';
+import ServicesSection from '@/components/sections/ServicesSection';
+import TestimonialsSection from '@/components/sections/TestimonialsSection';
+import CtaSection from '@/components/sections/CtaSection';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import { Helmet } from 'react-helmet';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>Grid Plus Electric Inc | Licensed Electrician in Orangevale, CA</title>
+        <meta name="description" content="Professional electrical services in Orangevale, CA. Residential and commercial electricians with 5-star ratings. Contact us for free quotes and emergency services." />
+        <meta name="keywords" content="electrician Orangevale, licensed electrician CA, emergency electrician services Orangevale, residential electrician, commercial electrician, Grid Plus Electric" />
+      </Helmet>
+      
+      <Navbar />
+      
+      <main>
+        <HeroSection />
+        <ServicesSection />
+        <TestimonialsSection />
+        <CtaSection />
+      </main>
+      
+      <Footer />
+    </>
   );
 };
 

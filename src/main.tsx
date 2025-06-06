@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation, BrowserRouter } from 'react-router-dom';
 import App from './App';
-import { Analytics } from "@vercel/analytics/next"
+import { inject } from "@vercel/analytics";
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
@@ -16,10 +16,11 @@ function ScrollToTop() {
   return null;
 }
 
+inject();
+
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Analytics />
       {/* ScrollToTop component to reset scroll position on route change */}
       <ScrollToTop />
       <App />

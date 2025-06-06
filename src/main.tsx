@@ -19,6 +19,8 @@ function ScrollToTop() {
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
+      <Analytics />
+      {/* ScrollToTop component to reset scroll position on route change */}
       <ScrollToTop />
       <App />
     </BrowserRouter>

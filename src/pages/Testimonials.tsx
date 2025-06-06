@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -129,7 +128,7 @@ const Testimonials = () => {
       
       <Navbar />
       
-      <main>
+      <main className="bg-white min-h-screen">
         <section className="bg-electric-light py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
@@ -201,21 +200,21 @@ const Testimonials = () => {
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="bg-electric-light p-6 rounded-lg">
+                <div className="bg-electric-light p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold text-electric-dark mb-3">Expertise</h3>
                   <p className="text-gray-700">
                     Our licensed electricians have years of experience and continuous training in the latest electrical technologies.
                   </p>
                 </div>
                 
-                <div className="bg-electric-light p-6 rounded-lg">
+                <div className="bg-electric-light p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold text-electric-dark mb-3">Reliability</h3>
                   <p className="text-gray-700">
                     We show up on time, communicate clearly, and complete projects as promised with transparent pricing.
                   </p>
                 </div>
                 
-                <div className="bg-electric-light p-6 rounded-lg">
+                <div className="bg-electric-light p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold text-electric-dark mb-3">Quality</h3>
                   <p className="text-gray-700">
                     We use premium materials and follow strict quality standards to ensure your electrical systems are safe and durable.

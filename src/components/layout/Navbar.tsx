@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
@@ -42,10 +41,10 @@ const Navbar = () => {
               </Link>
             ))}
             <Button asChild className="bg-electric-blue hover:bg-electric-dark">
-              <Link to="/contact" className="flex items-center gap-2">
+              <a href="tel:9166621394" className="flex items-center gap-2">
                 <Phone size={16} />
                 <span className="hidden lg:inline">916-662-1394</span>
-              </Link>
+              </a>
             </Button>
           </nav>
 
@@ -92,10 +91,10 @@ const Navbar = () => {
             </Link>
           ))}
           <Button asChild className="w-full bg-electric-blue hover:bg-electric-dark">
-            <Link to="/contact" className="flex items-center justify-center gap-2" onClick={toggleMobileMenu}>
+            <a href="tel:9166621394" className="flex items-center justify-center gap-2" onClick={toggleMobileMenu}>
               <Phone size={16} />
               <span>916-662-1394</span>
-            </Link>
+            </a>
           </Button>
         </nav>
       </div>

@@ -1,17 +1,52 @@
-
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ContactForm from '@/components/ui/ContactForm';
 import { Phone, Mail, MapPin, Clock, ExternalLink } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 
+declare global {
+  interface Window {
+    google?: any;
+    initMap?: () => void;
+  }
+}
+
 const Contact = () => {
+  const mapRef = useRef<HTMLDivElement>(null);
   // Function to initialize Google Maps
   useEffect(() => {
-    // This would typically initialize a Google Map
-    // Since we don't have an actual API key, we're just showing a placeholder
-    console.log("Google Maps would initialize here with a proper API key");
+    // Use the precise coordinates for 6220 Pecan Ave, Orangevale, CA 95662
+    const latLng = { lat: 38.679466, lng: -121.220650 };
+    function initializeMap() {
+      if (window.google && mapRef.current) {
+        const map = new window.google.maps.Map(mapRef.current, {
+          center: latLng,
+          zoom: 17,
+          mapTypeId: 'roadmap',
+          disableDefaultUI: true
+        });
+        new window.google.maps.Marker({
+          position: latLng,
+          map,
+          title: 'Grid Plus Electric Inc',
+        });
+      }
+    }
+
+    if (!window.google && mapRef.current) {
+      window.initMap = initializeMap;
+      const script = document.createElement('script');
+      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyD2X7r037asQ_2yeCKLdxUekrUTxexM2jM&callback=initMap`;
+      script.async = true;
+      document.body.appendChild(script);
+    } else if (window.google && mapRef.current) {
+      initializeMap();
+    }
+    // Clean up script and global callback on unmount
+    return () => {
+      window.initMap = undefined;
+    };
   }, []);
 
   return (
@@ -101,13 +136,12 @@ const Contact = () => {
                 
                 <div className="mt-8">
                   <h3 className="text-xl font-semibold mb-4">Our Location</h3>
-                  <div className="bg-gray-200 h-72 rounded-lg flex items-center justify-center border border-gray-300">
-                    {/* This would be a Google Map in production */}
-                    <div className="text-center p-6">
-                      <p className="text-gray-500 italic mb-4">Google Maps Integration</p>
-                      <p className="text-lg">Grid Plus Electric Inc</p>
-                      <p>6220 Pecan Ave, Orangevale, CA 95662</p>
-                    </div>
+                  <div className="bg-gray-200 h-72 rounded-lg flex items-center justify-center border border-gray-300 overflow-hidden shadow-md">
+                    <div ref={mapRef} className="w-full h-full rounded-lg" style={{ minHeight: '18rem' }} />
+                  </div>
+                  <div className="text-center mt-4">
+                    <p className="text-lg font-semibold text-electric-dark">Grid Plus Electric Inc</p>
+                    <p className="text-gray-700">6220 Pecan Ave, Orangevale, CA 95662</p>
                   </div>
                 </div>
               </div>

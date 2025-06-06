@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import CtaSection from '@/components/sections/CtaSection';
@@ -81,18 +80,13 @@ const About = () => {
               <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">
                 To provide safe, reliable, and innovative electrical solutions with unmatched customer service, enhancing the safety and comfort of homes and businesses throughout our community.
               </p>
-              
               <h2 className="text-3xl font-bold text-electric-dark mb-6 text-center">Our Values</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-                {values.map((value, index) => (
-                  <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                    <div className="flex items-start gap-3">
-                      <CheckCircle2 className="h-6 w-6 text-electric-blue flex-shrink-0 mt-1" />
-                      <div>
-                        <h3 className="text-xl font-bold text-electric-dark mb-2">{value.title}</h3>
-                        <p className="text-gray-700">{value.description}</p>
-                      </div>
-                    </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
+                {values.map((value, idx) => (
+                  <div key={idx} className="bg-white rounded-lg shadow-md border border-gray-200 p-6 flex flex-col items-center text-center transition-transform hover:scale-105">
+                    <CheckCircle2 className="text-electric-blue mb-3" size={36} />
+                    <h3 className="text-xl font-semibold text-electric-dark mb-2">{value.title}</h3>
+                    <p className="text-gray-700">{value.description}</p>
                   </div>
                 ))}
               </div>

@@ -1,40 +1,34 @@
-
 import ServiceCard from '@/components/ui/ServiceCard';
-import { Lightbulb, Home, Building2, Zap, Shield, Clock } from 'lucide-react';
+import { Lightbulb, Home, Building2, Zap, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 const ServicesSection = () => {
   const services = [
     {
-      title: 'Residential Wiring',
-      description: 'Complete home electrical solutions including panel upgrades, rewiring, outlet installation, and troubleshooting electrical issues.',
+      title: 'Outlets and Switches',
+      description: 'Installation, repair, and replacement of electrical outlets and switches to ensure safe and reliable operation.',
       icon: Home
     },
     {
-      title: 'Commercial Installation',
-      description: 'Electrical systems for businesses, offices, and retail spaces. Code-compliant installations and preventative maintenance.',
+      title: 'Wiring and Circuit Breakers',
+      description: 'Comprehensive wiring solutions and circuit breaker panel upgrades or repairs to meet modern electrical demands.',
       icon: Building2
     },
     {
-      title: 'Lighting Services',
-      description: 'Interior and exterior lighting design, installation, and repair. Energy-efficient lighting solutions to reduce costs.',
+      title: 'Lighting Solutions',
+      description: 'Interior and exterior lighting design, installation, and repair for energy-efficient and aesthetic lighting.',
       icon: Lightbulb
     },
     {
-      title: 'Emergency Repairs',
-      description: '24/7 emergency electrical services to address urgent issues quickly and safely, restoring your power when you need it most.',
+      title: 'Ceiling Fan Installation',
+      description: 'Professional installation and repair of ceiling fans to enhance comfort and air circulation in your space.',
       icon: Zap
     },
     {
-      title: 'Electrical Safety',
-      description: 'Comprehensive safety inspections, GFCI protection, smoke detector installation, and electrical hazard prevention.',
+      title: 'EV Charger Installation',
+      description: 'Setup and installation of electric vehicle chargers to support your transition to sustainable transportation.',
       icon: Shield
-    },
-    {
-      title: 'Scheduled Maintenance',
-      description: 'Regular electrical system maintenance to prevent failures and ensure optimal operation of your electrical systems.',
-      icon: Clock
     }
   ];
 

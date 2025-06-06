@@ -8,7 +8,7 @@ const CtaSection = () => {
     <section className="py-16 bg-electric-dark text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Need an Electrician in Orangevale?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Need an Electrician?</h2>
           <p className="text-xl mb-8">
             Whether it's an emergency repair or a planned installation, our team of licensed electricians is ready to help with all your electrical needs.
           </p>

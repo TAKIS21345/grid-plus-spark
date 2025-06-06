@@ -8,11 +8,10 @@ const HeroSection = () => {
     <div className="relative bg-electric-light animate-fade-in">
       <div className="container mx-auto px-6 py-16 md:py-24 flex flex-col items-center text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-electric-dark mb-4">
-          Professional Electrical Services in Orangevale
+        Expert Electrical Solutions: Panel Upgrades, EV Chargers & 24/7 Emergency Service in Orangevale
         </h1>
-        
         <p className="text-xl text-gray-700 max-w-2xl mb-4">
-          Licensed electricians providing residential and commercial electrical solutions with quality workmanship and excellent customer service.
+        Licensed, bonded, and insured electricians providing residential and commercial electrical solutions with quality workmanship and excellent customer service. Available 24/7 for all your troubleshooting needs.
         </p>
         
         <div className="flex items-center justify-center mb-8">

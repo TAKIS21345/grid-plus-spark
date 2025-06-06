@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -6,10 +5,12 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactForm = () => {
   const { toast } = useToast();
-  
+  const [state, handleSubmit] = useForm("mwpbvqvg");
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,8 +28,9 @@ const ContactForm = () => {
     setFormData(prev => ({ ...prev, service: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    handleSubmit(e);
     
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
@@ -50,8 +52,12 @@ const ContactForm = () => {
     });
   };
 
+  if (state.succeeded) {
+    return <p className="text-green-700 font-semibold text-center py-8">Thank you! Your request has been submitted. We'll contact you soon.</p>;
+  }
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={onSubmit} className="space-y-6">
       <div className="space-y-4">
         <div>
           <Label htmlFor="name">Full Name</Label>
@@ -77,6 +83,7 @@ const ContactForm = () => {
               onChange={handleChange}
               required
             />
+            <ValidationError prefix="Email" field="email" errors={state.errors} />
           </div>
           
           <div>
@@ -95,8 +102,10 @@ const ContactForm = () => {
         <div>
           <Label htmlFor="service">Service Needed</Label>
           <Select
+            name="service"
             value={formData.service}
             onValueChange={handleServiceChange}
+            required
           >
             <SelectTrigger>
               <SelectValue placeholder="Select service" />
@@ -122,12 +131,14 @@ const ContactForm = () => {
             className="min-h-[120px]"
             required
           />
+          <ValidationError prefix="Message" field="message" errors={state.errors} />
         </div>
       </div>
       
       <Button 
         type="submit"
         className="w-full bg-electric-blue hover:bg-electric-dark"
+        disabled={state.submitting}
       >
         Submit Request
       </Button>

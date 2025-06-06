@@ -1,4 +1,3 @@
-
 import HeroSection from '@/components/sections/HeroSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
@@ -18,11 +17,13 @@ const Index = () => {
       
       <Navbar />
       
-      <main>
+      <main className="bg-white min-h-screen">
         <HeroSection />
-        <ServicesSection />
-        <TestimonialsSection />
-        <CtaSection />
+        <div className="max-w-7xl mx-auto">
+          <ServicesSection />
+          <TestimonialsSection />
+          <CtaSection />
+        </div>
       </main>
       
       <Footer />

@@ -1,8 +1,7 @@
-
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import CtaSection from '@/components/sections/CtaSection';
-import { Lightbulb, Home, Building2, Zap, Shield, Clock, Wifi, Power, Activity, Plug } from 'lucide-react';
+import { Lightbulb, Home, Building2, Zap, Shield, Wifi, Power, Activity, Plug } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 
 interface ServiceDetailProps {
@@ -39,165 +38,83 @@ const ServiceDetail = ({ icon, title, description, features }: ServiceDetailProp
 const Services = () => {
   const services = [
     {
-      icon: <Home className="h-6 w-6 text-electric-blue" />,
-      title: 'Residential Electrical Services',
-      description: 'Complete electrical solutions for homes of all sizes in Orangevale and surrounding areas.',
+      icon: <Home className="h-6 w-6 text-electric-blue" />, 
+      title: 'Outlets and Switches',
+      description: 'Installation, repair, and replacement of electrical outlets and switches to ensure safe and reliable operation.',
       features: [
-        'Electrical panel upgrades and replacements',
-        'Whole-house rewiring and circuit installation',
-        'Outlet and switch installation/replacement',
-        'Ceiling fan installation',
-        'Smoke and carbon monoxide detector installation',
-        'Home electrical safety inspections'
+        'Electrical outlet installation and repair',
+        'Switch replacement and upgrades',
+        'Child safety outlet solutions'
       ]
     },
     {
-      icon: <Building2 className="h-6 w-6 text-electric-blue" />,
-      title: 'Commercial Electrical Services',
-      description: 'Reliable electrical solutions for businesses, designed to minimize downtime and maximize productivity.',
+      icon: <Building2 className="h-6 w-6 text-electric-blue" />, 
+      title: 'Wiring and Circuit Breakers',
+      description: 'Comprehensive wiring solutions and circuit breaker panel upgrades or repairs to meet modern electrical demands.',
       features: [
-        'Office and retail space electrical design',
-        'Commercial lighting installation',
-        'Power distribution systems',
-        'Backup generator installation',
-        'Code compliance upgrades',
-        'Electrical maintenance programs'
+        'Whole-house rewiring',
+        'Circuit breaker panel upgrades',
+        'Dedicated circuits for appliances'
       ]
     },
     {
-      icon: <Lightbulb className="h-6 w-6 text-electric-blue" />,
-      title: 'Lighting Services',
-      description: 'Enhance your space with professional lighting solutions that improve aesthetics and energy efficiency.',
+      icon: <Lightbulb className="h-6 w-6 text-electric-blue" />, 
+      title: 'Lighting Solutions',
+      description: 'Interior and exterior lighting design, installation, and repair for energy-efficient and aesthetic lighting.',
       features: [
         'LED lighting upgrades',
         'Recessed lighting installation',
-        'Landscape and outdoor lighting',
-        'Security lighting systems',
-        'Smart lighting controls',
-        'Lighting design consultation'
+        'Landscape and outdoor lighting'
       ]
     },
     {
-      icon: <Zap className="h-6 w-6 text-electric-blue" />,
-      title: 'Emergency Electrical Services',
-      description: '24/7 response for urgent electrical problems to keep your home or business safe.',
+      icon: <Zap className="h-6 w-6 text-electric-blue" />, 
+      title: 'Ceiling Fan Installation',
+      description: 'Professional installation and repair of ceiling fans to enhance comfort and air circulation in your space.',
       features: [
-        'Power outage troubleshooting',
-        'Circuit breaker failures',
-        'Electrical fire safety',
-        'Surge protection installation',
-        'Storm damage electrical repairs',
-        'Emergency wiring repairs'
+        'Ceiling fan installation',
+        'Ceiling fan balancing and repair'
       ]
     },
     {
-      icon: <Shield className="h-6 w-6 text-electric-blue" />,
-      title: 'Electrical Safety & Inspections',
-      description: 'Proactive solutions to identify and address potential electrical hazards before they become problems.',
+      icon: <Shield className="h-6 w-6 text-electric-blue" />, 
+      title: 'EV Charger Installation',
+      description: 'Setup and installation of electric vehicle chargers to support your transition to sustainable transportation.',
       features: [
-        'Comprehensive electrical safety audits',
-        'GFCI and AFCI protection installation',
-        'Child safety outlet solutions',
-        'Electrical code compliance inspections',
-        'Insurance requirement certifications',
-        'Safety upgrades for older homes'
-      ]
-    },
-    {
-      icon: <Wifi className="h-6 w-6 text-electric-blue" />,
-      title: 'Smart Home Electrical',
-      description: 'Modern electrical solutions to make your home more connected, efficient, and convenient.',
-      features: [
-        'Smart switch and outlet installation',
-        'Home automation system wiring',
-        'Structured wiring for networks',
-        'Smart thermostat installation',
-        'Video doorbell and security camera wiring',
-        'Voice-controlled lighting setup'
-      ]
-    },
-    {
-      icon: <Power className="h-6 w-6 text-electric-blue" />,
-      title: 'Electrical Upgrades',
-      description: 'Modernize your electrical system to meet current demands and improve safety.',
-      features: [
-        '100-200 amp service upgrades',
-        'Dedicated circuits for appliances',
-        'Garage and workshop electrical upgrades',
-        'Kitchen and bathroom electrical remodels',
-        'Whole-house surge protection',
-        'EV charger installations'
-      ]
-    },
-    {
-      icon: <Activity className="h-6 w-6 text-electric-blue" />,
-      title: 'Troubleshooting & Repairs',
-      description: 'Expert diagnosis and repair of electrical issues, from simple fixes to complex problems.',
-      features: [
-        'Circuit overload resolution',
-        'Outlet and switch repairs',
-        'Flickering light diagnosis',
-        'Appliance wiring issues',
-        'Electrical noise problems',
-        'Hot panel and wire investigations'
-      ]
-    },
-    {
-      icon: <Plug className="h-6 w-6 text-electric-blue" />,
-      title: 'Specialty Electrical Services',
-      description: 'Custom electrical solutions for unique needs and specialized applications.',
-      features: [
-        'Pool and spa electrical systems',
-        'Home theater and media room wiring',
-        'Basement and attic electrical additions',
-        'Workshop power solutions',
-        'Electric vehicle charging stations',
-        'Backup generator systems'
+        'Home EV charger installation',
+        'Commercial EV charging stations',
+        'Dedicated circuits for EV chargers'
       ]
     }
   ];
-
   return (
     <>
       <Helmet>
-        <title>Electrical Services | Grid Plus Electric Inc | Orangevale, CA</title>
-        <meta name="description" content="Comprehensive electrical services for residential and commercial properties in Orangevale, CA. 24/7 emergency repairs, installations, and maintenance." />
-        <meta name="keywords" content="electrician services Orangevale, residential electrician, commercial electrical services, emergency electrical repairs, lighting installation Orangevale" />
+        <title>Our Services | Grid Plus Electric Inc | Orangevale, CA</title>
+        <meta name="description" content="Explore the full range of electrical services offered by Grid Plus Electric in Orangevale, CA. Residential, commercial, EV charging, lighting, and more." />
+        <meta name="keywords" content="electrical services Orangevale, electrician services, EV charger installation, lighting installation, panel upgrades, Grid Plus Electric" />
       </Helmet>
-      
       <Navbar />
-      
-      <main>
+      <main className="bg-white min-h-screen">
         <section className="bg-electric-light py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold text-electric-dark mb-6">Our Electrical Services</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-electric-dark mb-6">Our Services</h1>
               <p className="text-xl text-gray-700">
-                Grid Plus Electric offers a complete range of electrical services for residential and commercial customers in Orangevale and surrounding areas. Our licensed electricians deliver quality workmanship with a focus on safety and customer satisfaction.
+                Comprehensive electrical solutions for homes and businesses in Orangevale and the Sacramento area. Quality, safety, and customer satisfaction are our top priorities.
               </p>
             </div>
           </div>
         </section>
-        
         <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 gap-6">
-              {services.map((service, index) => (
-                <ServiceDetail
-                  key={index}
-                  icon={service.icon}
-                  title={service.title}
-                  description={service.description}
-                  features={service.features}
-                />
-              ))}
-            </div>
+          <div className="container mx-auto px-4 max-w-5xl">
+            {services.map((service, idx) => (
+              <ServiceDetail key={idx} {...service} />
+            ))}
           </div>
         </section>
-        
         <CtaSection />
       </main>
-      
       <Footer />
     </>
   );

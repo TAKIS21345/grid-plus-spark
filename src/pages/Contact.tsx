@@ -37,7 +37,7 @@ const Contact = () => {
     if (!window.google && mapRef.current) {
       window.initMap = initializeMap;
       const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyD2X7r037asQ_2yeCKLdxUekrUTxexM2jM&callback=initMap`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&callback=initMap`;
       script.async = true;
       document.body.appendChild(script);
     } else if (window.google && mapRef.current) {

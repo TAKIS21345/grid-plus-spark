@@ -4,7 +4,7 @@ import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import CtaSection from '@/components/sections/CtaSection';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Index = () => {
   return (

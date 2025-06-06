@@ -4,7 +4,7 @@ import Footer from '@/components/layout/Footer';
 import CtaSection from '@/components/sections/CtaSection';
 import { Star, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 interface TestimonialProps {
   name: string;

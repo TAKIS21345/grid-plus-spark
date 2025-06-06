@@ -2,7 +2,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import CtaSection from '@/components/sections/CtaSection';
 import { CheckCircle2 } from 'lucide-react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   const values = [

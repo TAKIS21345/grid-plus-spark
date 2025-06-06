@@ -3,7 +3,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ContactForm from '@/components/ui/ContactForm';
 import { Phone, Mail, MapPin, Clock, ExternalLink } from 'lucide-react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 declare global {
   interface Window {

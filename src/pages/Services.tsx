@@ -2,7 +2,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import CtaSection from '@/components/sections/CtaSection';
 import { Lightbulb, Home, Building2, Zap, Shield, Wifi, Power, Activity, Plug } from 'lucide-react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 interface ServiceDetailProps {
   icon: React.ReactNode;

@@ -63,9 +63,9 @@ const Contact = () => {
         <section className="bg-electric-light py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold text-electric-dark mb-6">Contact Us</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-electric-dark mb-6">Contact</h1>
               <p className="text-xl text-gray-700">
-                Need electrical services? Reach out to Grid Plus Electric today for expert assistance and free quotes.
+                Need electrical services? Contact Grid Plus Electric today for expert assistance and free quotes from the owner.
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@ const Contact = () => {
               <div>
                 <h2 className="text-3xl font-bold text-electric-dark mb-6">Get In Touch</h2>
                 <p className="text-lg text-gray-700 mb-8">
-                  Whether you need to schedule a service, request a quote, or have questions about our electrical services, we're here to help. Fill out the form and we'll get back to you promptly.
+                  If you need to schedule a service, request a quote, or have questions about electrical services, please fill out the form and you will get a prompt response directly from the owner.
                 </p>
                 
                 <ContactForm />

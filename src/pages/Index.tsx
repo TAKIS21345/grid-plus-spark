@@ -11,7 +11,7 @@ const Index = () => {
     <>
       <Helmet>
         <title>Grid Plus Electric Inc | Licensed Electrician in Orangevale, CA</title>
-        <meta name="description" content="Professional electrical services in Orangevale, CA. Residential and commercial electricians with 5-star ratings. Contact us for free quotes and emergency services." />
+        <meta name="description" content="Professional electrical services in Orangevale, CA. Residential and commercial electrician with 5-star ratings. Contact the owner for free quotes and emergency services." />
         <meta name="keywords" content="electrician Orangevale, licensed electrician CA, emergency electrician services Orangevale, residential electrician, commercial electrician, Grid Plus Electric" />
       </Helmet>
       

@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, ExternalLink } from 'lucide-react';
 
@@ -98,7 +97,7 @@ const Footer = () => {
 
         <div className="mt-10 pt-6 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; {year} Grid Plus Electric Inc. All rights reserved.</p>
+            <p className="text-sm text-gray-500">&copy; {year} Grid Plus Electric Inc. All rights reserved. Owner-operated. Licensed & Insured.</p>
             <div className="mt-4 md:mt-0">
               <p>License #: C-10 123456</p>
             </div>

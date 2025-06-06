@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Star } from 'lucide-react';
@@ -11,7 +10,7 @@ const HeroSection = () => {
         Expert Electrical Solutions: Panel Upgrades, EV Chargers & 24/7 Emergency Service in Orangevale
         </h1>
         <p className="text-xl text-gray-700 max-w-2xl mb-4">
-        Licensed, bonded, and insured electricians providing residential and commercial electrical solutions with quality workmanship and excellent customer service. Available 24/7 for all your troubleshooting needs.
+        Licensed, bonded, and insured electrician providing residential and commercial electrical solutions with quality workmanship and excellent customer service. Available 24/7 for all your troubleshooting needs.
         </p>
         
         <div className="flex items-center justify-center mb-8">
@@ -39,17 +38,17 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl">
           <div className="bg-white p-4 rounded-lg shadow-sm">
             <h3 className="font-bold text-electric-blue mb-1">Licensed & Insured</h3>
-            <p className="text-sm text-gray-600">Fully licensed electrical contractors</p>
+            <p className="text-sm text-gray-600">Fully licensed and insured electrician</p>
           </div>
           
           <div className="bg-white p-4 rounded-lg shadow-sm">
             <h3 className="font-bold text-electric-blue mb-1">24/7 Emergency Service</h3>
-            <p className="text-sm text-gray-600">Always available when you need us</p>
+            <p className="text-sm text-gray-600">Always available when you need help</p>
           </div>
           
           <div className="bg-white p-4 rounded-lg shadow-sm">
             <h3 className="font-bold text-electric-blue mb-1">Satisfaction Guaranteed</h3>
-            <p className="text-sm text-gray-600">We stand behind our work</p>
+            <p className="text-sm text-gray-600">All work is guaranteed</p>
           </div>
         </div>
       </div>

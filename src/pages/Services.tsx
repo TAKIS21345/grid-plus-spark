@@ -90,7 +90,7 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Our Services | Grid Plus Electric Inc | Orangevale, CA</title>
+        <title>Services | Grid Plus Electric Inc | Orangevale, CA</title>
         <meta name="description" content="Explore the full range of electrical services offered by Grid Plus Electric in Orangevale, CA. Residential, commercial, EV charging, lighting, and more." />
         <meta name="keywords" content="electrical services Orangevale, electrician services, EV charger installation, lighting installation, panel upgrades, Grid Plus Electric" />
       </Helmet>
@@ -99,9 +99,9 @@ const Services = () => {
         <section className="bg-electric-light py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold text-electric-dark mb-6">Our Services</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-electric-dark mb-6">Services</h1>
               <p className="text-xl text-gray-700">
-                Comprehensive electrical solutions for homes and businesses in Orangevale and the Sacramento area. Quality, safety, and customer satisfaction are our top priorities.
+                Comprehensive electrical solutions for homes and businesses in Orangevale and the Sacramento area. Quality, safety, and customer satisfaction are my top priorities as an independent electrician.
               </p>
             </div>
           </div>

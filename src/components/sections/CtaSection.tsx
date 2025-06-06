@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Phone, Calendar, Clock } from 'lucide-react';
@@ -10,7 +9,7 @@ const CtaSection = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Need an Electrician?</h2>
           <p className="text-xl mb-8">
-            Whether it's an emergency repair or a planned installation, our team of licensed electricians is ready to help with all your electrical needs.
+            Whether it's an emergency repair or a planned installation, you can count on Grid Plus Electric for all your electrical needs. One owner, one electrician, always accountable.
           </p>
           
           <div className="flex flex-col md:flex-row justify-center gap-4 mb-8">
@@ -21,7 +20,7 @@ const CtaSection = () => {
               </a>
             </Button>
             
-            <Button asChild variant="outline" className="border-white text-white hover:bg-white/10 flex items-center gap-2 px-8 py-6 text-lg">
+            <Button asChild variant="outline" className="border-white text-black hover:bg-white/10 hover:text-white flex items-center gap-2 px-8 py-6 text-lg">
               <Link to="/contact">
                 <Calendar size={20} />
                 <span>Schedule Appointment</span>

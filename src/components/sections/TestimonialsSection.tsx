@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import { Button } from '@/components/ui/button';
@@ -8,40 +7,40 @@ import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: 'Jennifer M.',
+      name: 'Laura Hackford',
       rating: 5,
-      content: 'Grid Plus Electric was professional, efficient, and knowledgeable. They arrived on time and completed the job faster than expected. Highly recommend!',
-      date: 'March 2025'
+      content: 'Sammie did great work and was very helpful through the whole process of getting our electrical panel replaced. He worked quickly and was very knowledgeable. We will definitely use him for any work we need in the future!',
+      date: 'May 2025'
     },
     {
-      name: 'Robert S.',
+      name: 'Sue Stryker',
       rating: 5,
-      content: 'I had several electrical issues that other companies couldn\'t fix. The team at Grid Plus diagnosed the problems quickly and resolved everything in one visit.',
+      content: 'Sammy, the owner/electrical contractor, installed a ceiling light/fan and ceiling LED light fixture. I had a time crunch so he got the materials (lights) from the hardware store and got them installed efficiently. He took the old fixtures out to the trash; saving me time. Price was reasonable. I would definitely use him again.',
+      date: 'September 2024'
+    },
+    {
+      name: 'Bear Trap Stunts',
+      rating: 5,
+      content: 'Saman is outstanding. I can’t say enough good things about this guy. Customer service is above and beyond. I had a tree take out my power and damage my old outdated box. Sam came out quoted me without trying to upsell me, told me the benefits of a 200 over a 100 set up and told me to make the choice. Which I chose to do. His work was so good when I called for scheduled the inspection the crew was already there to reattach my power due to the knowledge of the great work he does. Got the whole box replacement done in just a few hours and waited here until the inspector arrived. Was happy to answer any questions I had without making me feel like I didn’t know what I was talking about. Quality-10 out of 10. Kindness-10 out of 10. Professionalism-10 out of 10. Don’t even make the other call. Use him. You won’t regret it.',
+      date: 'June 2024'
+    },
+    {
+      name: 'Sean Collins',
+      rating: 5,
+      content: 'Grid Plus did an excellent job installing recessed lighting for me! Great communication, everything was clear and professional from start to finish. The craftsmanship was top notch. Everything was installed perfectly, clean, and aligned. If you\'re searching for a reliable, skilled electrician I highly recommend Grid Plus. I am very happy with their work and will use again in the future.',
       date: 'February 2025'
     },
     {
-      name: 'Sarah T.',
+      name: 'Ashley Mills',
       rating: 5,
-      content: 'Outstanding service! They installed recessed lighting throughout our home and the results are beautiful. Fair pricing and excellent attention to detail.',
-      date: 'January 2025'
+      content: 'I recently had the pleasure of hiring Saman for some issues at my home, and I am extremely satisfied with the service he provided. He got to my house very quickly. His efficiency and knowledge were evident as he not only repaired two faulty outlets but also took the time to educate me on the intricacies of outlets and wires. Additionally, he inspected my outdated electrical panel and offered valuable safety suggestions, demonstrating a thorough understanding of his craft. I highly recommend this electrician for anyone seeking prompt, knowledgeable, and informative electrical services.',
+      date: 'June 2024'
     },
     {
-      name: 'David P.',
+      name: 'Dan Litch',
       rating: 5,
-      content: 'I\'ve used Grid Plus Electric for both my home and business. Their electricians are skilled, courteous, and always clean up after themselves.',
-      date: 'December 2024'
-    },
-    {
-      name: 'Michelle K.',
-      rating: 5,
-      content: 'Called for an emergency repair on a Sunday evening and they responded within an hour. Fantastic service when you really need it!',
-      date: 'November 2024'
-    },
-    {
-      name: 'Thomas W.',
-      rating: 5,
-      content: 'Grid Plus Electric upgraded our panel and rewired several rooms. Everything was done to code and they helped us understand the work being done.',
-      date: 'October 2024'
+      content: 'Hired Sammy again. It’s the 4th time using him and it’s always a great experience. This project was installing my EV Charger in the garage. Install looks clean and professional as well. I highly recommend Sammy, he’s pleasant to work with and his rates are fair.',
+      date: 'September 2024'
     }
   ];
 
@@ -60,7 +59,7 @@ const TestimonialsSection = () => {
     <section className="py-16 bg-electric-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-heading">What Our Customers Say</h2>
+          <h2 className="section-heading">What Customers Say</h2>
           <div className="flex items-center justify-center gap-1 mb-4">
             {[...Array(5)].map((_, i) => (
               <Star
@@ -72,7 +71,7 @@ const TestimonialsSection = () => {
           </div>
           <p className="text-xl mb-2">5.0 Rating from 90+ Reviews</p>
           <p className="section-subheading">
-            We take pride in our high-quality workmanship and exceptional customer service.
+            Proud to provide high-quality workmanship and exceptional customer service as an independent electrician.
           </p>
         </div>
 
